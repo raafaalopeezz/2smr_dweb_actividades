@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Actividad 5 - Formulario en HTML</title>
+</head>
+<body>
+   <header>
+       <h1>Actividad 5 - Formulario en HTML</h1>
+   </header>
+   <main>
+       <section>
+           <h2>Controles de formularios</h2> 
+           <form action="" method="post">
+               <fieldset>
+                   <legend>Datos personales</legend>
+
+
+                   <label for="userName">Nombre:</label>
+                   <input type="text" name="userName" id="userName" required/>
+                   <br>
+                   <br>
+                   <label for="email"> Correo Electrónico:</label>
+                       <input type="email" name="email" id="email" required/>
+                   <br>
+                   <br>
+                   <label for="url">URL</label>
+                   <input type="url" name="url" id="url">
+                   <br>
+                   <br>
+                   <label for="ciudad">ciudad</label>
+                   <select name="ciudad" id="ciudad">
+                       <option value="CO">CÓRDOBA</option>
+                       <option value="SE">SEVILLA</option>
+                       <option value="MA">MÁLAGA</option>
+                       <option value="GR">GRANADA</option>
+                       <option value="JA">JAÉN</option>
+                       <option value="HU">HUELVA</option>
+                       <option value="AL">ALMERÍA</option>
+                        <option value="CA">CÁDIZ</option>
+                   </select>
+               </fieldset>
+               <br>
+           <fieldset>
+               <legend>Otros datos</legend>
+
+
+               <label for="fecha">Fecha</label>
+               <input type="date" name="fecha" id="fecha" />
+               <br>
+               <br>
+               <label for="hora">Tiempo</label>
+               <input type="time" name="hora" id="hora" />
+               <br>
+               <br>
+               <label for="fechahora">Fecha y Hora</label>
+               <input type="datetime-local" name="fechahora" id="fechahora" />
+               <br>
+               <br>
+               <label for="mes">Mes</label>
+               <input type="month" name="mes" id="mes" />
+               <br>
+               <br>
+               <label for="semana">Semana</label>
+               <input type="week" name="semana" id="semana" />
+               <br>
+               <br>
+               <label for="maxmin">Máximo -10 Max 10:</label>
+               <input type="number" name="maxmin" id="maxmin" min="-10" max="10" />
+               <br>
+               <br>
+               <label for="telefono">Telefono</label>
+               <input type="tel" name="telefono" id="telefono" />
+               <br>
+               <br>
+               <label for="búsqueda">Término de búsqueda</label>
+               <input type="search" name="búsqueda" id="búsqueda" />
+               <br>
+               <br>
+               <label for="color">color</label>
+               <input type="color" name="color" id="color" />
+               <br>
+               <br>
+           </fieldset>
+           <br>
+           <fieldset>
+               <legend>Otros controladores</legend>
+               <label for="Aficiones">Aficiones</label>
+               <input type="checkbox" name="cine" id="cine" checked><label for="cine">Cine</label>
+               <input type="checkbox" name="deporte" id="deporte"><label for="deporte">Deporte</label>
+               <br>
+               <br>
+               <p>Forma de pago</p>
+               <input type="radio" id="visa" name="formapago" value="visa" checked><label for="visa">Visa</label>
+               <input type="radio" id="americanexpress" name="formapago" value="americanexpress"><label for="americanexpress">American express</label>
+               <input type="radio" id="mastercard" name="formapago" value="mastercard"><label for="mastercard">MasterCard</label>
+           </fieldset>
+               <br>
+               <input type="submit" value="Enviar">
+           </form>
+       </section>
+   </main>
+   <footer>
+       <small>Copyright &copy; - Nombre Apellidos</small>
+   </footer>
+</body>
+</html>
+

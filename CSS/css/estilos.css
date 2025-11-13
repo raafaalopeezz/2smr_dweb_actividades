@@ -1,0 +1,17 @@
+/*colordel documento y tipo de letra*/
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif,Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 10px;
+font-size: 300%;
+}
+
+p{
+
+
+}
