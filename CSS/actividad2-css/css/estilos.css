@@ -1,3 +1,15 @@
+/*Definicion colores*/
+:root{
+    --color-principal:#076896;  
+    --primary-color-transparent:#07689677;
+    --bonton-activo: #004466;
+    --color-fondo_caja: #eaf6fb;
+    --color-borde_caja: #006699;
+    --secundary-color: #f0fff0; 
+    --color-borde-redondo: #333;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.4;
@@ -17,7 +29,7 @@ header{
     border-radius: 0 0 4px 4px;
     padding-top: 0,5rem;
     padding-bottom: 0.5rem;
-    box-shadow: 4rem 0.2rem rgb(4,28,54);
+    box-shadow: 0 0.2rem 0.2rem rgb(4,28,54);
 }
 
 
@@ -31,6 +43,7 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255,255,255, 0.5);
+    border-radius: 4px;
 }
 
 section{
@@ -46,5 +59,157 @@ padding: 1rem;
 section h2 {
     color: #006699;
     margin-bottom: 0.5rem;
-    padding-bottom: 0.5rem;
+}
+
+/*Pseudoclases*/
+.btn, .btn-sec{
+   border: solid 2px var(--color-principal);
+    border-radius: 4px;
+    background-color: white;
+    padding: 0,4rem 0,8rem;
+    margin: 0.3 0.3rem 0.6rem 0;
+    color: var(--color-principal);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover, .btn-sec:hover {
+    background-color: var(--primary-color-transparent);
+    transition: background-color 0.5s ease;
+}
+
+.btn:active, .btn-sec:active {
+    background-color: var(--bonton-activo);
+}
+
+input{
+    border: 1px solid#999;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: 1px solid var(--color-principal)
+   
+}
+
+.lista-demo{
+    margin-top: 0.8rem;
+    padding-left: 1.2rem;
+    transition: opacity 0,3s;
+}
+
+.lista-demo li{
+    margin: 0.2rem 0;
+    opacity: 0,8;
+    transition: opacity 0.3s;
+}
+
+.lista-demo li:first-child {
+    font-weight: bold;
+    color: var(--bonton-activo);
+    opacity: 1;
+}
+
+.lista-demo li:hover{
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+/*caja (.caja):
+fondo azul claro (#eaf6fb),
+borde 3px solido #006699,
+bordes redondeados (8px),
+con 1remde margen
+y 1 remn de relleno */
+
+.caja{
+background-color: var(--color-fondo_caja);
+border: 3px solid var(--color-borde_caja);
+border-radius: 8px;
+margin: 1rem;
+padding: 1rem;
+}
+
+
+/*span que es hijo directo de #contenedor
+fondo azul muy claro (#d0f0f5)
+borde 1px solido #006699,
+relleno 0,3rem
+margen inferior 0,3rem */
+
+#contenedor > span {
+    background-color: var(--color-fondo_caja);
+    border: 1px solid var(--color-borde_caja);
+    padding: 0.3rem;
+    margin-bottom: 1.3rem;
+}
+
+#contenedor +p {
+    background-color: var(--secundary-color);
+    border-left: 4px solid green;
+    padding-left: 0,4rem;
+}
+
+/* Aplicar estilos comunes a las cajas
+Tamaño: ancho 100px,
+alto 80px,
+borde 3px sólido #333,
+texto centrado vertical y horizontal.
+*/
+
+.box {
+    float: left;
+    width: 100px ;
+    height: 80px;
+    border: 3px solid var(--color-borde-redondo);
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* .b1 -> fondo rojo claro (#ff9999),
+olo esquina superior izquierda redondeada (16px). */
+.b1{
+    background-color: #ff9999;
+    border-radius: 16px 0 0 0;
+}   
+/* .b2 -> fondo amarillo (#ffcc66),
+solo esquina superior derecha redondeada (16px).
+*/
+.b2{
+    background-color: #ffcc66;
+    border-radius: 0 16px 0 0;
+    border-top-right-radius: 16px;
+}
+/* - .b3 -> fondo verde claro (#99cc99
+todas las esquinas redondeadas (16px).*/
+.b3{
+    background-color: #99cc99;
+    border-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.fila::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* FOOTER 
+    texto alineado en el centro
+    fondo claro
+    borde superior
+    letras mas pequeña q la original*/
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    background-color: #eee;
+    padding: 1rem;
+    border-top: 3px solid var(--color-principal);
+border-radius: 8px;
 }
