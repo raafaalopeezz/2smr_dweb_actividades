@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NeoTech</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <p>NeoTech</p> 
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Catálogo de Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+       <div class="redes-cabecera">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="./img/ig.svg" alt="Instagram">
+            </a>
+            <a href="https://web.whatsapp.com" target="_blank">
+                <img src="./img/wa.svg" alt="WhatsApp">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="./img/tk.svg" alt="TikTok">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccion-contacto">
+            <h2>Pídenos tu presupuesto</h2>
+            <p>Rellena el formulario y te contestaremos en menos de 24 horas.</p>
+
+            <form id="formContacto" action="#" method="POST">
+                
+                <label for="nombre">Tu nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="juan@correo.com">
+
+                <label for="servicio">¿Dime, qué necesitas?</label>
+                <select id="servicio" name="servicio">
+                    <option value="reparacion">Reparación de Hardware</option>
+                    <option value="formateo">Formateo e instalación de SO</option>
+                    <option value="montaje">Montaje de PC a medida</option>
+                    <option value="otros">Otros problemas</option>
+                </select>
+
+                <p>¿Nos traes el pc o vamos nosotros a por él?</p>
+                <label>
+                    <input type="radio" name="entrega" value="tienda" checked> Lo llevo a la tienda
+                </label>
+                <label>
+                    <input type="radio" name="entrega" value="domicilio"> Recogida a domicilio
+                </label>
+
+                <label>
+                    <input type="checkbox" id="privacidad" name="privacidad">
+                    He leído y acepto la política de privacidad.
+                </label>
+
+                <p id="mensaje"></p>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rafael López Dios. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://web.whatsapp.com" target="_blank">WhatsApp</a>
+            <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
